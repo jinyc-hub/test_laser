@@ -1,0 +1,67 @@
+# 编译产生的文件
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+*.make
+
+# 临时文件
+*.tmp
+*.swp
+*.tar.xz
+*.zip
+
+# Visual Studio 编译产生的文件夹
+Debug/
+Release/
+x64/
+x86/
+
+# 编辑器配置
+.vscode/
+build/*
+devel/*
+
+# macOS 系统文件
+.DS_Store
+
+# 编译器生成的文件
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# 编译中间文件
+CMakeFiles/
+CMakeScripts/
+CMakeCache.txt
+CMakeDoxyfile.in
+CMakeDoxygenDefaults.cmake
+CMakeDoxygenDefaultsOverrides.cmake
+CMakeVars.txt
+CTestTestfile.cmake
+CTestTestfile.tmp
+CTestConfiguration.ini
+
+# 自动生成的文档
+doc/html/
+doc/latex/
+doc/xml/
+doc/man/
+doc/rtf/
+doc/doxygen_sqlite3.db
+
+# C++编译器工具
+compile_commands.json
+
+# 调试信息
+*.dSYM/
+
+# 其他忽略项
+.idea/
+*.suo
+*.user
+
