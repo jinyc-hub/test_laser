@@ -115,14 +115,14 @@ void laserCB(const sensor_msgs::LaserScan::ConstPtr &scan) {
   laser_geometry::LaserProjection projection;
   tf::TransformListener listener;
   if (!listener.waitForTransform(
-          scan->header.frame_id, "/laser",
+          scan->header.frame_id, "/laser2",
           scan->header.stamp + ros::Duration().fromSec(scan->ranges.size() *
                                                        scan->time_increment),
           ros::Duration(1.0))) {
     return;
   }
   sensor_msgs::PointCloud2 pointCloud2;
-  projection.transformLaserScanToPointCloud("laser", *scan, pointCloud2,
+  projection.transformLaserScanToPointCloud("laser2", *scan, pointCloud2,
                                             listener, 3.0);
   pointPub.publish(pointCloud2);
 
